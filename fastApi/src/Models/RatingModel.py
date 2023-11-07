@@ -1,6 +1,10 @@
 from pydantic import BaseModel
+from typing import Optional
+
 
 class RatingModel(BaseModel):
-    id: int
+    """Data model for the 'Rating' table."""
+
+    id: Optional[int] = None
     rate: float
     contador: int

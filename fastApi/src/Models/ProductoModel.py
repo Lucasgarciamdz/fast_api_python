@@ -1,7 +1,11 @@
 from pydantic import BaseModel
+from typing import Optional
+
 
 class ProductoModel(BaseModel):
-    id: int
+    """Data model for the 'Producto' table."""
+
+    id: Optional[int] = None
     titulo: str
     precio_compra: float
     descripcion: str
